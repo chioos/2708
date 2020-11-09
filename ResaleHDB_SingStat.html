@@ -42,61 +42,103 @@
     <html>
  <head></head>
  <body>
-  <table aria-label="Table for display data" id="normalNoneBreak" class="table" style="width: 99%;padding: 0px; border-spacing: 1px; border: 0px; "> 
+  <input type="hidden" id="isPivot" /> 
+  <table id="pivotedBreak" class="table" style="width: 99%; padding: 0px; border-spacing: 1px" data-hasqtip="20" oldtitle="pivotedBreak" aria-describedby="qtip-20"> 
    <tbody>
-    <tr class="BackGroundTRHeader"> 
-     <th scope="col" class="TextHeaderTable3 divResize">Variables </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2015 1Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2015 2Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2015 3Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2015 4Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2016 1Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2016 2Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2016 3Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2016 4Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2017 1Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2017 2Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2017 3Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2017 4Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2018 1Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2018 2Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2018 3Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2018 4Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2019 1Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2019 2Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2019 3Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2019 4Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2020 1Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2020 2Q </th> 
-     <th scope="col" class="TextHeaderTable2 divResize" style="white-space: nowrap;">2020 3Q </th> 
+    <tr class="BackGroundTRHeader">
+     <th scope="col" rowspan="1" style="width: 1%; vertical-align: middle;">Time </th>
+     <th scope="col" style="vertical-align: bottom;width: 45%; " class="TextHeaderTable3 divResize" rowspan="1">Total <span style="font-style: italic; font-size: 10px; display: block;"></span> <br /></th>
     </tr> 
     <tr class="RowOdd"> 
-     <td class="TextRow1 divResize"> 
-      <div class="varNameClass" style="display:block;word-wrap: break-word;padding-left: 0px;">
-        Total 
-      </div> </td> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2015 1Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">135.6</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2015 2Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">135</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2015 3Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">134.6</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2015 4Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">134.8</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2016 1Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">134.7</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2016 2Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">134.7</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2016 3Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">134.7</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2016 4Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">134.6</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2017 1Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">133.9</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2017 2Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">133.7</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2017 3Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">132.8</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2017 4Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">132.6</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2018 1Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131.6</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2018 2Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131.7</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2018 3Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131.6</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2018 4Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131.4</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2019 1Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2019 2Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">130.8</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2019 3Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">130.9</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2019 4Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131.5</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2020 1Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131.5</td> 
+    </tr> 
+    <tr class="RowEven"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2020 2Q </td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">131.9</td> 
+    </tr> 
+    <tr class="RowOdd"> 
+     <td class="TextRow1 divResize" style="white-space: nowrap;">2020 3Q</td> 
      <td class="TextRowRight divResize" style="white-space: nowrap;">133.9</td> 
     </tr> 
    </tbody>
@@ -127,7 +169,7 @@
      <td style="align: left; text-align: left;font-size: 11px;"></td>  
     </tr> 
     <tr> 
-     <td style="align: left; text-align: left;font-size: 11px;">Data last updated: 26/10/2020</td> 
+     <td style="align: left; text-align: left;font-size: 11px;">Data last updated: </td> 
     </tr> 
     <tr> 
      <td style="align: left; text-align: left;font-size: 11px;">Generated by: SingStat Table Builder</td> 
